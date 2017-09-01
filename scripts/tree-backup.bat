@@ -13,9 +13,9 @@ set ss=%time:~6,2%
 set stamp=%yyyy%%mm%%dd%-%hh%%min%%ss%
 
 cd \Users\mbrown\AppData\Roaming\gramps\grampsdb\
-dir /A:D /B 1> "\Users\mbrown\Documents\Gramps-Files\Gramps-Project\scripts\tree_lists\tree_list_%stamp%.txt" 2>&1
+dir /A:D /B 1> "\Users\mbrown\Documents\Gramps-Files\tree_lists\tree_list_%stamp%.txt" 2>&1
 
-cd \Users\mbrown\Documents\Gramps-Files\Gramps-Project\scripts\tree_lists\
+cd \Users\mbrown\Documents\Gramps-Files\tree_lists\
 for /f "delims=" %%A in (tree_list_%stamp%.txt) do (
 	
 	cd \Users\mbrown\AppData\Roaming\gramps\grampsdb\%%~nA\
